@@ -613,7 +613,7 @@ async function main() {
                         ".volume-container"
                     )
                     .getElementsByTagName("input")[0]
-                    .value = 10;
+                    .value = 30;
 
             }
 
