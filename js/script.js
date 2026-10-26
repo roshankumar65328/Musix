@@ -15,7 +15,7 @@ function secondsToMinute(input) {
     let minutes = Math.floor(seconds / 60);
     let remainingSeconds = seconds % 60;
 
-    let mm = String(minutes).padStart(2, "0");
+    let mm = String(minutes).padStart(2, "0");      // two digit hona chahiye agar 1 digit hua pehla digit "0" hoga
     let ss = String(remainingSeconds).padStart(2, "0");
 
     return `${mm}:${ss}`;
@@ -165,7 +165,7 @@ async function displayAlbum() {
     try {
 
         // Get all album/folder names
-        const response = await fetch("/songs/songs.json");
+        const response = await fetch("/songs/albums.json");
 
         if (!response.ok) {
             throw new Error(
